@@ -14,7 +14,7 @@ const getImageLinks = async (url: string): Promise<string[]> => {
 	const imagesRef = storage.ref(url);
 	const images = await imagesRef.listAll();
 	const links = await Promise.all(
-		images.items.map((img) => img.getDownloadURL()),
+		images.items.map((img: any) => img.getDownloadURL()),
 	);
 	return links as string[];
 };
