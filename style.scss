@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+img {
+	width: 100%;
+	display: block;
+	margin: 1rem 0;
+}
+
+#qr {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+
+	svg {
+		$size: 20rem;
+		width: $size;
+		height: $size;
+	}
+}
+
+h1 {
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+	color: white;
+	margin-top: 20rem;
+}
